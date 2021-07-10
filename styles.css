@@ -1,0 +1,273 @@
+body{
+    font-family: 'Montserrat', sans-serif;                 
+    color: #2c3e50;
+    background: white;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+}
+
+h1, h2{
+    font-weight: normal;
+}
+
+.hidden{
+    display: none;
+}
+
+.material-icons{
+    user-select: none;
+}
+
+#wrapper{
+    width: 90%;
+    max-width: 960px;
+    margin: 20px auto;
+    border-radius: 6px;
+    box-sizing: border-box;
+    padding: 0 0 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#page-banner{
+    background: #eee ;
+    padding: 10px 0;
+}
+
+#page-banner h1 {
+    margin: 20px 20px;
+    letter-spacing: .2em;
+    font-weight: 600;
+    
+}
+
+#page-banner form {
+    margin: 20px 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+#page-banner form input[type="text"]{
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+#page-banner input{
+    margin-left: 20px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    max-width: 300px;
+    width: 90%;
+}
+
+#book-list,#complete-list, #add-list, #tabbed-content{
+    margin: 30px;
+}
+
+#book-list ul,
+#complete-list ul, #tabbed-content ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+#book-list li,
+#complete-list li{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-left: 5px solid #ddd;
+    margin: 20px 10px;
+}
+
+#book-list ul input[type="checkbox"],
+.markComplete{
+    margin-right: 20px;
+}
+
+span.markComplete{
+    font-size: 16px;
+    padding: 3px;
+    border-radius: 30%;
+    background: rgb(252, 250, 250);
+    cursor: pointer;
+}
+
+span.markComplete:hover{
+    background: #fc3903;
+    color: #fff;
+}
+
+.title-container{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+span.name{
+    margin-right: 15px;
+}
+
+
+span.name > textarea{
+    border-radius: 3px;
+    line-height: 1.5em;
+}
+
+span.name p{
+    font-size: 16px;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+span.name, textarea{
+    font-size: 16px;
+    font-family: Tahoma;
+    width: 100%;
+    letter-spacing: 1px;
+}
+
+#expand{
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+textarea{
+    resize: vertical;
+    height: 20px;
+    padding: 3px 5px;
+    border: 0;
+    background: rgba(238, 238, 238, 0.4);
+    border-bottom: 1px solid #fc3903;
+}
+
+textarea:focus{
+    outline: 0;
+}
+
+#book-list li:hover{
+    border-color: #fc3903;
+}
+
+#complete-list li:hover{
+    border-color: #fc3903;
+}
+
+.title{
+    font-size: 29px;
+    letter-spacing: -1px;
+    
+}
+
+#complete-list .title{
+    display: flex;
+    align-items: center;
+}
+
+#complete-list .badge{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    /* color: #ddd; */
+    width: 20px;
+    height: 20px;
+    margin-right: 70%;
+    border-radius: 30%;
+    background: none;
+    border: 2px solid #fc3903;
+    color: #fc3903;
+}
+
+.delete,
+.update{
+    float: right;
+    background: #fc3903;
+    padding: 10px 15px;
+    font-size: 13.3333px;
+    margin: 0 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #ecf0f1;
+    text-transform: capitalize;
+}
+
+.delete:hover,
+.update:hover{
+    background: #fc3903;
+}
+
+#add-list{
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+}
+
+#add-list input[type="text"]{
+    display: block;
+    margin: 25px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    box-sizing: border-box;
+    width: 300px;
+    float: left;
+    clear: both;
+}
+
+#add-list input:focus{
+    outline: 0;
+    border: 1px solid #fc3903;
+}
+
+#hide{
+    cursor: pointer;
+}
+
+#add-list button{
+    border: 1px solid #fc3903;
+    background: #fc3903;
+    padding: 10px 20px;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    width: 100px;
+    float: left;
+    margin: 25px 0;
+    border-left: 0;
+    color: white;
+}
+
+#add-list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+#add-list #hide{
+  width: 30px;
+}
+
+#tabbed-content li{
+    display: inline-block;
+    padding: 10px 14px;
+    background: #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+#tabbed-content .panel{
+    display: none;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+#tabbed-content .panel.active{
+    display: block;
+}
